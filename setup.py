@@ -20,16 +20,9 @@ setup(
     maintainer="Leodanis Pozo Ramos",
     maintainer_email="leodanis@realpython.com",
     license="MIT",
-    classifiers=[
-        "License :: OSI Approved :: MIT License",
-        "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
-        "Programming Language :: Python :: 3.9",
-        "Programming Language :: Python :: Implementation :: CPython",
-    ],
     packages=["anthem"],
     include_package_data=True,
+    install_requires=['boto3==1.18.33', 'botocore==1.21.33'],
     entry_points={
         "console_scripts": [
             "anthem=anthem.__main__:main",
