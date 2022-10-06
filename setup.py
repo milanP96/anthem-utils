@@ -16,6 +16,6 @@ setuptools.setup(
         "Bug Tracker": "https://github.com/mike-huls/toolbox/issues"
     },
     license='MIT',
-    packages=[],
+    packages=['anthem-utils'],
     install_requires=['requests'],
 )
