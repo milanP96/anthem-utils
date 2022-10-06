@@ -22,7 +22,7 @@ setup(
     license="MIT",
     packages=["anthem"],
     include_package_data=True,
-    install_requires=['boto3==1.18.33', 'botocore==1.21.33'],
+    install_requires=['boto3'],
     entry_points={
         "console_scripts": [
             "anthem=anthem.__main__:main",
