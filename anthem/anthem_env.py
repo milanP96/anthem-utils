@@ -20,4 +20,7 @@ class AnthemEnv:
 
         env_json = json.loads(body)
 
-        self.values = env_json
+        self._values = env_json
+
+    def get(self, key):
+        return self._values.get(key, None)
