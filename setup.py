@@ -21,7 +21,7 @@ setup(
     maintainer_email="leodanis@realpython.com",
     license="MIT",
     packages=["anthem"],
-    include_package_data=True,
+    # include_package_data=True,
     install_requires=['boto3'],
     entry_points={
         "console_scripts": [
