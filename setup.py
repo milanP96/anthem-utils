@@ -8,7 +8,7 @@ DESCRIPTION = HERE.joinpath("README.md").read_text()
 VERSION = __version__
 
 setup(
-    name="anthem",
+    name="anthem-utils",
     version=VERSION,
     description="Generate directory tree diagrams for Real Python articles",
     long_description=DESCRIPTION,
