@@ -21,7 +21,7 @@ setup(
     license="MIT",
     packages=find_packages(),
     include_package_data=True,
-    install_requires=['boto3'],
+    install_requires=['requests'],
     entry_points={
         "console_scripts": [
             "anthem=anthem.__main__:main",
