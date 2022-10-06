@@ -1,6 +1,6 @@
 
 """Top-level package for RP Tree."""
 
-__version__ = "0.1.14"
+__version__ = "0.1.15"
 
-from anthem.anthem_env import AnthemEnv
+# from anthem.anthem_env import AnthemEnv
