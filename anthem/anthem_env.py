@@ -16,7 +16,7 @@ class AnthemEnv:
         env_key = os.getenv('ENV_KEY')
 
         env_obj = s3_client.Object('anthem-envs', env_key)
-        body = env_obj.get()['Body']
+        body = env_obj.get()['Body'].read().decode('utf-8')
 
         env_json = json.loads(body)
 
