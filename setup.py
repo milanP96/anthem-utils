@@ -1,12 +1,11 @@
 import pathlib
-from setuptools import setup
+from setuptools import setup, find_packages
 
 from anthem import __version__
 
 HERE = pathlib.Path().cwd()
 DESCRIPTION = HERE.joinpath("README.md").read_text()
 VERSION = __version__
-
 
 setup(
     name="anthem",
@@ -20,8 +19,8 @@ setup(
     maintainer="Leodanis Pozo Ramos",
     maintainer_email="leodanis@realpython.com",
     license="MIT",
-    packages=["anthem"],
-    # include_package_data=True,
+    packages=find_packages(),
+    include_package_data=True,
     install_requires=['boto3'],
     entry_points={
         "console_scripts": [
